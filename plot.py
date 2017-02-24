@@ -23,7 +23,7 @@ def help():
 	print ''
 
 def main(argv):
-	opts, args = getopt.getopt(argv, 'f:i:m:p:s:y:h', 'file=, interval=, mode=, processed=, split=, yrange=, help')
+	opts, args = getopt.getopt(argv, 'f:i:m:p:s:y:h', ['file=', 'interval=', 'mode=', 'processed=', 'split=', 'yrange=', 'help'])
 	
 	if len(args)!=1:
 		help()
